@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Admission Social Media Card Maker</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body bgcolor="skyblue">
+    <header>
+        <h1>New Admission Social Media Card Maker</h1>
+    </header>
+    <main>
+        <section class="card-maker">
+            <h2>Create Your Card</h2>
+            <form id="cardForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="course">Course:</label>
+                <input type="text" id="course" name="course" required>
+                
+                <label for="date">Date of Admission:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <button type="submit">Generate Card</button>
+            </form>
+            <div id="cardPreview" class="card-preview">
+                <h3>Preview</h3>
+                <div class="card">
+                    <h1 id="cardName"></h1>
+                    <p id="cardCourse"></p>
+                    <p id="cardDate"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Social Media Card Maker. All rights reserved.</p>
+    </footer>
+    <script src="p.js"></script>
+</body>
+</html>
